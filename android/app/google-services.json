@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "7969202126",
+    "project_id": "hello-chat-2b6be",
+    "storage_bucket": "hello-chat-2b6be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7969202126:android:f9b9e3b56cea1ad834d59f",
+        "android_client_info": {
+          "package_name": "com.example.hello_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7969202126-h74246gmct61glajnprkbgt7n9igfndk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hello_chat",
+            "certificate_hash": "364b349a966549ca43cf55b03bf88adb0cced2f1"
+          }
+        },
+        {
+          "client_id": "7969202126-48gvtbmmq3f0g3i3nck0nv032tlbt2gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRPjN7Rrs3OixTWG4VEa4QyHGgOhj1IOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7969202126-48gvtbmmq3f0g3i3nck0nv032tlbt2gn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
