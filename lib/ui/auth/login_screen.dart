@@ -26,7 +26,7 @@ class _PageState extends State<LoginScreen> {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(26.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[

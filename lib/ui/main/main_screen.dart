@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_chat/models/chat.dart';
 import 'package:hello_chat/ui/chat/chat_screen.dart';
 import 'package:hello_chat/ui/users/user_search_screen.dart';
+import 'package:hello_chat/ui/users/user_settings.dart';
 import 'package:hello_chat/ui/widgets/chat_row.dart';
 
 class MainScreen extends StatefulWidget {
@@ -61,17 +62,18 @@ class _PageState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       backgroundColor: Color(0xff070c44),
       appBar: AppBar(
         backgroundColor: Color(0xff6226c5),
         title: const Text("Hello Chat"),
         actions: [
           FlatButton(
-          onPressed: null,
-          padding: EdgeInsets.all(0.0),
-          child: Image.asset("assets/images/Admin Settings Male.png")
-          )
+              padding: EdgeInsets.all(0.0),
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => UserSettings()));
+              },
+              child: Image.asset("assets/images/Admin Settings Male.png"))
           // add more IconButton
         ],
       ),
@@ -99,9 +101,9 @@ class _PageState extends State<MainScreen> {
     if (_chats.isEmpty) {
       return const Center(
         child: Text(
-            'No chat found',
-            style: TextStyle(color: Colors.white),
-      ),
+          'No chat found',
+          style: TextStyle(color: Colors.white),
+        ),
       );
     }
     return ListView.builder(
